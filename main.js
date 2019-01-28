@@ -182,3 +182,38 @@ console.log('myArr', myArr)
 
 [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
+[1,2,3].map((num) => {
+    return num * 2;
+});
+
+
+const res1 = [];
+[1,2,3].foreach(num => {
+
+})
+
+
+const myObj = {
+    name: 'Pierre',
+    car: {
+        color: 'red',
+        wheels: 4,
+
+    }
+}
+
+console.log(myObj.name);
+console.log(myObj.car.color)
+
+let myProp = 'car'
+console.log(myObj['car']);
+console.log(myObj[myProp]);
+
+const findObjectByProperty = (prop, value) => {
+    return cart.find(el => {
+        console.log('el', el);
+        console.log('el[prop]', el[prop]);
+        el[prop] === value;
+        return el;
+    })
+}

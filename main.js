@@ -91,3 +91,43 @@ if (20/2 >= 10 || 20/2 < 15  ){
 } else{
     console.log('NO')
 }
+
+// can see the group
+let isPrivate = false;
+let isMember = false;
+
+if (isPrivate === false || isPrivate === true && isMember === true) {
+    console.log('can see the group')
+} else {
+    console.log('cant see the group');
+}
+
+let isPrivate = true;
+let isMember = false;
+
+
+let isPrivate = true;
+let isMember = true;
+
+const username = prompt('what is your name?');
+console.log('username', username);
+alert('your value here');
+if (username === ""){
+    console.log('dont be shy')
+} else {
+    console.log('salut $username')
+}
+
+let isConnect = false;
+let Rank = 0;
+
+if (isConnect === false) {
+    console.log('veuillez vous connecter')
+} else if (isConnect === true && Rank === 0) {
+    console.log('vous êtes connecté en tant que standard user')
+} else if (isConnect === true && Rank === 1) {
+    console.log('vous êtes connecté en tant qu"admin')
+} else if (isConnect === true && Rank === 2){
+    console.log('vous êtes connecté en tant que super admin')
+}
+

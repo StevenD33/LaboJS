@@ -52,3 +52,42 @@ let test = 5;
 console.log('_____');
 console.log(test++);
 console.log(test);
+
+
+'3' + '5' // concatenate de chaine de carrac = 35 
+'3' * '5' //15 
+'hello' + '1' //hello1
+'hello' * '1' //NaN 
+
+
+//Ecrivez en ligne de code un moyen de verifier si 2 est superieur à 1 
+console.log(2 < 1); //true
+console.log(2>1 ); //false
+console.log(20 >= 10); //true
+console.log(10 >= 10); //true
+console.log(4 !== 6); 
+console.log(4 != '4');
+console.log(4 !== '4');
+
+console.log('2' !== 2); //false 
+console.log('hello' === 'hello'); //true 
+console.log('hello' === 'Hello'); //false
+
+
+
+
+//|| (ou)
+
+//&& (et)
+
+if (5 > 0 && 5 < 10){
+    console.log('YES');
+} else {
+    console.log('NO');
+}
+
+if (20/2 >= 10 || 20/2 < 15  ){
+    console.log('YES')
+} else{
+    console.log('NO')
+}

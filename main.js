@@ -162,6 +162,23 @@ const sum = (p1, p2) => p1 + p2;
 console.log('sum',sum(2));
 
 
-const truncate = () => {
-    
+const truncate = (str, length,trail) => {
+    if(str.length > length) {
+        return str.substrings(0, length) + trail
+    } else {
+        return str
+    }
+
 }
+
+
+const myArray = [1, 'Hello', true];
+console.log(myArr[0]);
+
+const myArr1 = myArr;
+myArr1[0] ='world ';
+console.log('myArr', myArr)
+
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9];
+

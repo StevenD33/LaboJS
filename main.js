@@ -131,3 +131,37 @@ if (isConnect === false) {
     console.log('vous êtes connecté en tant que super admin')
 }
 
+
+
+const today == new Date();
+const todayDay == today.getDay();
+
+const clientId = 1;
+//(condition) ? ... : ...;
+(typeof clientId === 'number') ? 
+    console.log('Saved') : console.log('Cancel')
+
+function  myFunc() {
+    console.log('Hello World!')
+}
+
+function returnFunc(text) {
+    console.log('text', text)
+    return text.toUpperCase();
+}
+
+console.log(returnFunc('Hello Worl'));
+
+const sum = (param1 =1, param2=2) => {
+    console.log('param1', param1)
+    console.log('param2', param2)
+    return param1 + param2
+}
+
+const sum = (p1, p2) => p1 + p2;
+console.log('sum',sum(2));
+
+
+const truncate = () => {
+    
+}

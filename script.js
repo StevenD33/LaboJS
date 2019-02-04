@@ -44,12 +44,22 @@ console.log('secondP > html', secondP[0].innerHTML);
 
 //Modifiez les attributs width à 50% et height à 'auto' de l'image.
 
-const myInmg = document.querySelector('img');
+const myImg = document.querySelector('img');
 myImg.setAttribute('width', '50%');
 myImg.setAttribute('height', 'auto');
 
 //Ajoutez un attribut alt non vide à l'image.
 
+myInmg.setAttribute('alt', 'Random Image');
+
+
 //Donnez la couleur 'blue' au premier paragraphe du div et la taille de police '1.5rem'.
 
+firstP.style.color = 'blue';
+firstP.style.fontSize = '1.5rem';
+
  //   Ajoutez la classe img à l'image.
+
+myImg.className = 'my-img'; // myImg.className += 'another-class'
+myImg.classList.add('my-img');
+myImg.classList.remove('my-img');

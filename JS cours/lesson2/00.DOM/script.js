@@ -63,3 +63,25 @@ firstP.style.fontSize = '1.5rem';
 myImg.className = 'my-img'; // myImg.className += 'another-class'
 myImg.classList.add('my-img');
 myImg.classList.remove('my-img');
+
+
+const parent = document.querySelector('div');
+console.log('parent', parent);
+const nodeToDelete = document.querySelector('div p');
+console.log('nodeToDelete', nodeToDelete);
+parent.removeChild(nodeToDelete);
+
+// Créez un div et insérez le dans la balise body.
+//
+//     Créez une balise ul avec 5 li dedans et insérez la dans un div dans body. N'hésitez pas à utiliser la boucle for pour ne pas répéter la même ligne de code 5 fois.
+
+const myBody = document.querySelector('body');
+const newDiv = document.createElement('div');
+newDiv.innerText = 'Hello!';
+myBody.appendChild(newDiv);
+myBody.prepend(newDiv);
+
+myBody.appendChild(anotherDiv);
+anotherDiv.innerText = 'First Child';
+anotherDiv.style.color = 'red';
+myBody.prepend(anotherDiv);

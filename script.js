@@ -14,5 +14,19 @@ console.log('my-Paragraphs2',myParagraphs2);
 
 
 //Trouvez la balise span avec l'id 'js-unique-el'. Loggez-là. Inspéctez les propriétés de cet objet Element
+
+const myUniqueEl = document.getElementById('js-unique-el');
+console.log('myUniqueEl', myUniqueEl);
+const myUniqueEl2 = document.querySelector('#js-unique-el');
+console.log
+
 //Trouvez toutes les balises p qui se trouvent dans un div.
+
+const myParagraphsInDivs = document.querySelectorAll('div p');
+console.log('myParagraphsInDivs', myParagraphsInDivs);
    // Trouvez toutes les balises span qui sont précédées par un div.
+
+const spansPreceededByDivs = document.querySelectorAll('div+span');
+console.log('spansPreceededByDivs', spansPreceededByDivs);
+
+

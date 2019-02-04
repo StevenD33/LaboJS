@@ -30,3 +30,26 @@ const spansPreceededByDivs = document.querySelectorAll('div+span');
 console.log('spansPreceededByDivs', spansPreceededByDivs);
 
 
+//joutez le texte 'I am the first paragraph' au premier paragraphe du document.
+
+const firstP = document.querySelector('p');
+firstP.innerText = 'I am the fisrt paragraph';
+console.log('firstP > text', firstP.innerText);
+
+//Ajoutez le HTML <span>Hello</span> au deuxième paragraphe du document.
+
+const secondP = document.querySelectorAll('.second-p');
+secondP[0].innerHTML = '<span>Hello</span>';
+console.log('secondP > html', secondP[0].innerHTML);
+
+//Modifiez les attributs width à 50% et height à 'auto' de l'image.
+
+const myInmg = document.querySelector('img');
+myImg.setAttribute('width', '50%');
+myImg.setAttribute('height', 'auto');
+
+//Ajoutez un attribut alt non vide à l'image.
+
+//Donnez la couleur 'blue' au premier paragraphe du div et la taille de police '1.5rem'.
+
+ //   Ajoutez la classe img à l'image.

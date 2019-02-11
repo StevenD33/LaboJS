@@ -52,7 +52,7 @@ function changeDropZoneState(isDragging) { //changement d'état de la zone
         dropZone.classList.remove('js-is-dragged-over');
 }
 
-function handleUploadedFile(file, index) {
+function handleUploadedFile(file, index) { //fonction error format image ou echec upload
     const error = getUploadError(file);
     error ?
         console.warn(`"${file.name}" Upload Error: ${error}`) :

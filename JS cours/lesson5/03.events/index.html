@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #js-hovered {
+            background-color: blue;
+            width: 7rem;
+            height: 7rem;
+        }
+        .tooltip-wrapper {
+            position: relative;
+        }
+
+        .tooltip {
+            display: none;
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(0,0,0,.7);
+            color: #fff;
+            opacity: 1;
+            transform: translateY(100%);
+        }
+    </style>
+</head>
+<body>
+<p class="tooltip-wrapper" id="js-tooltip-wrapper">
+    <span class="tooltip" id="js-tooltip">En informatique, un langage de programmation est une notation conventionnelle destinée à formuler des algorithmes et produire des programmes informatiques qui les appliquent.</span>
+    JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs avec l'utilisation (par exemple) de Node.js.
+</p>
+<button id="js-btn">Click me!</button>
+<div id="js-hovered"></div>
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

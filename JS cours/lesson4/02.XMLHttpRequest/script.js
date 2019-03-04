@@ -42,5 +42,63 @@ xhttp.onreadystatechange = () => {
 
 
 
-const planets = [1,2,3,4,5];
-planets.forEach()
+// Récupérez et affichez les données de 5 planètes avec les ids suivants:
+//          ==>         const planets = [1, 2, 3, 4, 5];
+
+const planets = [1, 2, 3, 4, 5];
+
+var xhttp3 = new XMLHttpRequest();
+xhttp3.onreadystatechange = () => {
+    if (xhttp3.readyState == 4 && xhttp3.status == 200) {
+        console.log('salut');
+        const rawValue = xhttp3.responseText;
+        const parsedValue = JSON.parse(rawValue);
+
+        const info = document.createElement('div');
+        info.innerHTML= `
+        <hr>
+        <p>Nom: ${parsedValue.name}</p>
+        <p>Diametre: ${parsedValue.diametre}</p>
+      `
+        document.body.appendChild(info);
+    }
+};
+planets.forEach(planet => {
+    console.log(planet);
+    xhttp3.open('GET', `https://swapi.co/api/planets/${planet}/`, true)
+})
+xhttp3.send();
+
+
+
+const myprms = () => {
+    return new Promise((resolve, reject) => {
+
+    })
+}
+
+myprms(7)
+
+
+
+fetch("https://jsonplaceholder.typicode.com/posts/25")
+.then(reponse => reponse.json())
+.then(resul)
+
+
+const signupData = {
+    email: 'test@ynov.com',
+    password: 'root',
+    lastname : 'toto'
+}
+
+fetch('https://reqres.in/api/register', {
+    method : 'POST',
+    body : JSON.stringify(signupData),
+    headers: {
+        'Content-Type': 'application/json'
+    }
+})
+
+.then(reponse => reponse.json())
+.then(result => console.log('result',result));

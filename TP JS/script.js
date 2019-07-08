@@ -1,4 +1,4 @@
-var marc = {
+/*var marc = {
     nom: 'Marc',
     age: 15,
     moyenne: 15
@@ -13,7 +13,7 @@ if (marc.age >= 18) {
 }
 
 */
-
+/*
 switch (marc.age) {
     case 18:
         console.log('tu as 18 ans ')
@@ -26,3 +26,25 @@ switch (marc.age) {
 
 
 }
+*/
+/*
+var i = 0
+while ( i < 11) {
+    console.log(i)
+    i = 1+1
+
+}
+
+
+
+for (var j = 0; j < 11; j++) {
+    console.log(j)
+}
+*/
+
+var eleves = ['Sbou', 'Sbou1', 'Sbou2']
+
+for (var i = 0 ; i < eleves.length; i++) {
+    console.log(eleves[i])
+}
+
